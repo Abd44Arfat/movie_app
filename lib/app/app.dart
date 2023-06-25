@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../presentation/resources/routes_manager.dart';
+
 
 
 class MyApp extends StatefulWidget {
@@ -19,7 +21,13 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      onGenerateRoute: RouteGenerator.getRoute,
+      initialRoute: Routes.main_screen,
+        theme: ThemeData(
 
-    );
+
+        scaffoldBackgroundColor: const Color(0xff141313),
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+    ));
   }
 }

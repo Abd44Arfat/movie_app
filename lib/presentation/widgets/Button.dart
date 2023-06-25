@@ -27,7 +27,7 @@ final String text;
             ),
             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(8),
+              borderRadius: BorderRadius.circular(20),
               side: borderSide ?? BorderSide.none,
             ),
           ),

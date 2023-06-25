@@ -22,11 +22,11 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       onGenerateRoute: RouteGenerator.getRoute,
-      initialRoute: Routes.main_screen,
+      initialRoute: Routes.watch_movie_screen,
         theme: ThemeData(
 
 
-        scaffoldBackgroundColor: const Color(0xff141313),
+        scaffoldBackgroundColor: const Color(0xff000000),
         visualDensity: VisualDensity.adaptivePlatformDensity,
     ));
   }
